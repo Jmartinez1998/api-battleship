@@ -34,6 +34,10 @@ class User extends Model {
   tokens () {
     return this.hasMany('App/Models/Token')
   }
+
+  static get Datapassw() {
+    return ['email', 'password']
+  }
 }
 
 module.exports = User
